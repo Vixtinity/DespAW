@@ -11,3 +11,8 @@ RUN echo "ismael:1234" | chpasswd
 EXPOSE 80
 #ejecutamos apache en primer plano cuando se inicie el contenedor
 CMD apachectl -DFOREGROUND
+
+#Establecemos el directorio de trabajo
+WORKDIR /var/www/html
+#Copiamos los archivos de la aplicacion al contenedor
+COPY ./src .
