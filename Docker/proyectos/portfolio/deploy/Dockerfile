@@ -5,7 +5,7 @@ RUN apt update && apt install -yq --no-install-recommends \
     nano \
     net-tools iputils-ping
 RUN useradd -rm -d /home/ismael -s /bin/bash morgado
-RUN echo "ismael:ismael" | chpasswd
+RUN echo "ismael:1234" | chpasswd
 
 #activamos el puerto 80 de apache
 EXPOSE 80
