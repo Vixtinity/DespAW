@@ -2,4 +2,5 @@ services:
   base:
     build:
       #ruta a traves de la cual desde cualquier proyecto se tiene acceso a cualquier imagen Dockerfile.
-      context:
+      context: /home/ismael/devops/DespAW/Docker/Caronte
+      dockerfile: ./dockerfiles/base/ubuntu/Dockerfile
