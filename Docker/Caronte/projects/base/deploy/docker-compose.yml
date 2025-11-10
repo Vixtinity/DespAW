@@ -4,3 +4,4 @@ services:
       #ruta a traves de la cual desde cualquier proyecto se tiene acceso a cualquier imagen Dockerfile.
       context: /home/ismael/devops/DespAW/Docker/Caronte
       dockerfile: ./dockerfiles/base/ubuntu/Dockerfile
+    container_name: ctbaseDAW
