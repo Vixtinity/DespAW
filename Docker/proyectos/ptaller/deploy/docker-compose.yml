@@ -6,6 +6,7 @@ services:
 
     image: webtaller:latest
     container_name: webtaller
+    hostname: webtaller
     volumes:
       - ./logs:/root/logs
     ports:
