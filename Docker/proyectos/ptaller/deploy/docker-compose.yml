@@ -1,0 +1,12 @@
+services:
+  webtaller:
+    build:
+      context: ..
+      dockerfile: ./deploy/Dockerfile
+
+    image: webtaller:latest
+    container_name: webtaller
+    volumes:
+      - ./logs:/root/logs
+    ports:
+      - "8080:80"
